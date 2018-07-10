@@ -1,0 +1,8 @@
+language: java
+jdk: oraclejdk10
+
+addons:
+  sonarcloud:
+    organization: "condessalovelace-github"
+script:
+- mvn clean install sonar:sonar
